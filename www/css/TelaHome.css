@@ -1,0 +1,269 @@
+:root{
+    --roxo: #5E17EB;
+    --verde: #00BF63;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    padding: 0px 20px;
+    /* border: 1px solid red; */
+}
+header .logo{
+    display: flex;
+    font-weight: bold;
+    font-size: 2.6em;
+}
+header span{
+    font-size: 3em;
+}
+/* FIM DOHEADER */
+
+/* BUSCA */
+.busca{
+    width: 100vw;
+    padding: 0px 20px;
+    /* border: 1px solid; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+}
+.busca form{
+    display: flex;
+    /* background-color: wheat; */
+    width: 100%;
+}
+form input[type=text]{
+    width: 60vw;
+    height: 3rem;
+    color: white;
+    background-color: var(--roxo);
+    border-radius: 40px;
+    font-size: 1.6em;
+    padding-left: 10px;
+    &::placeholder{
+        color: white;
+        opacity: 0.7;
+    }
+}
+form .inpubusca{
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    background-color: var(--roxo);
+}
+form #lupa{
+    font-size: 35px;
+    color: white;
+    margin-left: 10px;
+}
+form #fechar{
+    font-size: 30px;
+    color: white;
+    margin-right: 10px;
+}
+form #recente{
+    font-size: 30px;
+    align-self: center;
+    margin-left: 15px;
+    color: var(--roxo);
+}
+/* FIM DA BUSCA*/
+
+/* CATEGORIAS*/
+.exibicat{
+    width: 100vw;
+    padding: 0px 20px;
+    margin-top: 10px;
+    p{
+        text-align: center;
+        font-weight: bold;
+        color: var(--roxo);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: 10px;
+        i{
+            font-size: 20px;
+        }
+    }
+}
+.titulocat{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--verde);
+}
+.titulocat img{
+    width: 20px;
+}
+.titulocat h3{
+    font-size: 1em;
+    color: var(--verde);
+}
+
+div.categorias{
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+div.opcaocat{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px black;
+}
+div.opcaocat img{
+    width: 40px;
+    margin-left: 50%;
+    transform: translate(-50%, 25%);
+}
+/* FIM DAS CATEGORIAS*/ 
+
+div.traco{
+    width: 100vw;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.377);
+    margin-top: -10px;
+}
+
+/* NAVEGAÇÃO*/
+main{
+    width: 100vw;
+    padding: 0px 20px;
+    margin-top: 5px;
+}
+main .tipousuario{
+    display: flex;
+    justify-content: space-between;
+    /* height: 30px; */
+}
+main .tipos{
+    background-color: #C5E1F1;
+    color: var(--verde);
+    border-radius: 3px;
+    /* height: 20px; */
+    align-self: center;
+    padding: 5px 15px;
+}
+/* FIM DA NAVEGAÇÃO*/
+
+.navegacao{
+    width: 100vw;
+    padding: 0px 20px;
+    /* border: 1px solid red; */
+}
+.perfilnav{
+    width: 100%;
+    height: 20rem;
+    background-color: #C5E1F1;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 7px black;
+    margin-bottom: 30px;
+}
+.infos{
+    width: 100%;
+    height: 5.4rem;
+    /* background-color: #5E17EB; */
+    display: flex;
+    gap: 15px;
+    /* justify-content: space-between; */
+
+}
+.ftperfil img{
+    border-radius: 50%;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-top: 10px;
+    box-shadow: 1px 1px 7px black;
+}
+.info{
+    width: 300px;
+    h3{
+        margin-top: 15px;
+        font-size: 1.3em;
+    }
+    p{
+        margin-top: -5px;
+    }
+}
+.avaliacao{
+    /* display: flex; */
+    p{
+        display: block;
+        margin-top: -20px;
+        font-size: 0.7em;
+        line-height: 10px;
+        span{
+            /* font-weight: bold; */
+            color: var(--roxo);
+        }
+    }
+    i{
+        color: yellow;
+    }
+}
+.perfilnav .imgtext{
+    height: 100%;
+}
+.perfilnav .imgtext img{
+    border-radius: 10px;
+    margin-top: -15px;
+    width: 100%;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+.toolbar{
+    height: 80px;
+    
+}
+
+.tab-link{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.toolbar-inner .link{    
+    flex:1;
+    height: 80px;  
+    line-height: 25px; 
+	font-weight:bold;
+}
+
+.toolbar-inner .link:not(.active){
+    color:gray;
+	font-weight:normal;
+}
+
+.toolbar-inner > .link i{
+    font-size: 28px;
+}

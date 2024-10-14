@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>OnJOB</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/personalizado.css">
+
+    <!-- Icones remixicon -->
+    <link rel="stylesheet" href="css/reimixicon/remixicon.css">
+    <!-- fim dos Icones remixicon -->
+
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <!--Ícones Material Design-->
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- fim das fontes -->
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../www/css/TelaHome.css">
+    <!-- fim do Estilos -->
+
+
+</head>
+
+<body>
+    <!-- Initial Page, "data-name" contains page name -->
+    <div data-name="index" class="page color-theme-blue">
+
+        <!-- Top Navbar -->
+        <header>
+            <div class="logo">
+                <p style="color: var(--verde);">On</p>
+                <p style="color: var(--roxo);">JOB</p>
+            </div>
+            <span class="mdi mdi-dots-horizontal"></span>
+        </header>
+
+        <!-- Scrollable page content -->
+        <div class="page-content">
+            <section class="busca">
+                <form action="" method="post">
+                    <div class="inpubusca">
+                        <i id="lupa" class="ri-search-line"></i>
+                        <input type="text" name="busca" id="idbusca" placeholder="Busque Pelo Serviço">
+                        <i id="fechar" class="ri-close-line"></i>
+                    </div>
+                    <i id="recente" class="ri-history-line"></i>
+                </form>
+            </section>
+            <section class="exibicat">
+                <div class="titulocat">
+                    <img src="img/categoria.png" alt="">
+                    <h3>Categorias</h3>
+                </div>
+                <div class="categorias">
+                    <div style="background-color: brown;" class="opcaocat">
+                        <img src="img/iconeManutencao.png" alt="">
+                    </div>
+                    <div style="background-color: orange;" class="opcaocat">
+                        <img src="img/iconeConstrução.png" alt="">
+                    </div>
+                    <div style="background-color: yellow;" class="opcaocat">
+                        <img src="img/iconeEletrica.png" alt="">
+                    </div>
+                    <div style="background-color: red;" class="opcaocat">
+                        <img src="img/iconeEntregador.png" alt="">
+                    </div>
+                    <div style="background-color: rgba(0, 0, 255, 0.445);" class="opcaocat">
+                        <img src="img/iconeEncanador.png" alt="">
+                    </div>
+                    <div style="background-color: lightgreen;" class="opcaocat">
+                        <img src="img/iconeMedico.png" alt="">
+                    </div>
+                    <div style="background-color: rgba(0, 0, 139, 0.644);" class="opcaocat">
+                        <img src="img/iconeProgramador.png" alt="">
+                    </div>
+                    <div style="background-color: white;" class="opcaocat">
+                        <img src="img/iconeSeguranca.png" alt="">
+                    </div>
+                </div>
+                <p>Mais...<i class="ri-arrow-down-s-fill"></i></p>
+
+            </section>
+            <div class="traco"></div>
+            <main>
+                <div class="tipousuario">
+                    <div class="tipos">
+                        <h5>Profissionais</h5>
+                    </div>
+                    <div class="tipos">
+                        <h5>Estabelecimentos</h5>
+                    </div>
+                    <div class="tipos">
+                        <h5>Empresas</h5>
+                    </div>
+                </div>
+                <span>Para você:</span>
+            </main>
+
+            <section class="navegacao">
+                <div class="perfilnav">
+                    <div class="infos">
+                        <div class="ftperfil">
+                            <img src="img/user.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Carlão Careca</h3>
+                            <p>Eletrica / Manutenção</p>
+                        </div>
+                        <div class="avaliacao">
+                            <div>
+                                <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                    class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                    class="ri-star-half-fill"></i>
+                            </div>
+                            <br>
+                            <div>
+                                <p><span>122 Serv</span>. Concluidos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgtext">
+                        <img src="img/carlaãoCareca.avif"
+                            alt="">
+                        <h4>Info/Contratar</h4>
+                    </div>
+                </div>
+
+                <div class="perfilnav">
+                    <div class="infos">
+                        <div class="ftperfil">
+                            <img src="img/user.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Carlão Careca</h3>
+                            <p>Eletrica / Manutenção</p>
+                        </div>
+                        <div class="avaliacao">
+                            <div>
+                                <i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                    class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                                    class="ri-star-half-fill"></i>
+                            </div>
+                            <br>
+                            <div>
+                                <p><span>122 Serv</span>. Concluidos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgtext">
+                        <img src="img/carlaãoCareca.avif"
+                            alt="">
+                        <h4>Info/Contratar</h4>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+            <!-- TAB BAR-->
+            <div class="toolbar toolbar-bottom">
+                <div class="toolbar-inner display-flex">
+                    <a href="/index/" class="tab-link link active">
+                        <i class="mdi mdi-home"></i>
+                        <span>Link 1</span>
+                    </a>
+                    <a href="/link2/" class="tab-link link">
+                        <i class="mdi mdi-link"></i>
+                        <span>Link 2</span>
+                    </a>
+                    <a href="/link3/" class="tab-link link">
+                        <i class="mdi mdi-account"></i>
+                        <span>Link 3</span>
+                    </a>
+                    <a href="/link4/" class="tab-link link">
+                        <i class="mdi mdi-account"></i>
+                        <span>Link 4</span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>
