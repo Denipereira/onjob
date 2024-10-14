@@ -21,84 +21,89 @@ var app = new Framework7({
       path: '/index/',
       url: 'index.html',
       animate: false,
-	  on: {
-		pageBeforeIn: function (event, page) {
-		// fazer algo antes da página ser exibida
-		},
-		pageAfterIn: function (event, page) {
-		// fazer algo depois da página ser exibida
-		},
-		pageInit: function (event, page) {
-		// fazer algo quando a página for inicializada
-		},
-		pageBeforeRemove: function (event, page) {
-		// fazer algo antes da página ser removida do DOM
-		},
-	  }
+      on: {
+        pageBeforeIn: function (event, page) {
+          // fazer algo antes da página ser exibida
+        },
+        pageAfterIn: function (event, page) {
+          // fazer algo depois da página ser exibida
+        },
+        pageInit: function (event, page) {
+          // fazer algo quando a página for inicializada
+          $.getScript('js/index.js');
+
+  
+
+
+        },
+        pageBeforeRemove: function (event, page) {
+          // fazer algo antes da página ser removida do DOM
+        },
+      }
     },
     {
       path: '/link2/',
       url: 'link2.html',
       animate: false,
-	  on: {
-		pageBeforeIn: function (event, page) {
-		// fazer algo antes da página ser exibida
-		},
-		pageAfterIn: function (event, page) {
-		// fazer algo depois da página ser exibida
-		},
-		pageInit: function (event, page) {
-		// fazer algo quando a página for inicializada
-		},
-		pageBeforeRemove: function (event, page) {
-		// fazer algo antes da página ser removida do DOM
-		},
-	  }
+      on: {
+        pageBeforeIn: function (event, page) {
+          // fazer algo antes da página ser exibida
+        },
+        pageAfterIn: function (event, page) {
+          // fazer algo depois da página ser exibida
+        },
+        pageInit: function (event, page) {
+          // fazer algo quando a página for inicializada
+        },
+        pageBeforeRemove: function (event, page) {
+          // fazer algo antes da página ser removida do DOM
+        },
+      }
     },
     {
       path: '/link3/',
       url: 'link3.html',
       animate: false,
-	  on: {
-		pageBeforeIn: function (event, page) {
-		// fazer algo antes da página ser exibida
-		},
-		pageAfterIn: function (event, page) {
-		// fazer algo depois da página ser exibida
-		},
-		pageInit: function (event, page) {
-		// fazer algo quando a página for inicializada
-		},
-		pageBeforeRemove: function (event, page) {
-		// fazer algo antes da página ser removida do DOM
-		},
-	  }
+      on: {
+        pageBeforeIn: function (event, page) {
+          // fazer algo antes da página ser exibida
+        },
+        pageAfterIn: function (event, page) {
+          // fazer algo depois da página ser exibida
+        },
+        pageInit: function (event, page) {
+          // fazer algo quando a página for inicializada
+        },
+        pageBeforeRemove: function (event, page) {
+          // fazer algo antes da página ser removida do DOM
+        },
+      }
     },
     {
       path: '/link4/',
       url: 'link4.html',
       animate: false,
-	  on: {
-		pageBeforeIn: function (event, page) {
-		// fazer algo antes da página ser exibida
-		},
-		pageAfterIn: function (event, page) {
-		// fazer algo depois da página ser exibida
-		},
-		pageInit: function (event, page) {
-		// fazer algo quando a página for inicializada
-		},
-		pageBeforeRemove: function (event, page) {
-		// fazer algo antes da página ser removida do DOM
-		},
-	  }
+      on: {
+        pageBeforeIn: function (event, page) {
+          // fazer algo antes da página ser exibida
+        },
+        pageAfterIn: function (event, page) {
+          // fazer algo depois da página ser exibida
+        },
+        pageInit: function (event, page) {
+          // fazer algo quando a página for inicializada
+        },
+        pageBeforeRemove: function (event, page) {
+          // fazer algo antes da página ser removida do DOM
+        },
+      }
     },
   ],
   // ... other parameters
 });
 
 //Para testes direto no navegador
-var mainView = app.views.create('.view-main', { url: '/index/' });
+var mainView = app.views.create('.view-main', { url: '/link4/' });
 
 //EVENTO PARA SABER O ITEM DO MENU ATUAL
 app.on('routeChange', function (route) {

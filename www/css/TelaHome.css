@@ -9,10 +9,6 @@
     font-family: poppins;
 }
 
-body{
-    
-}
-
 header{
     display: flex;
     justify-content: space-between;
@@ -57,6 +53,7 @@ form input[type=text]{
     &::placeholder{
         color: white;
         opacity: 0.7;
+        font-size: 0.8em;
     }
 }
 form .inpubusca{
@@ -114,19 +111,22 @@ form #recente{
 }
 
 div.categorias{
+    padding: 10px 0px;
+    height: 164px;
+    overflow: hidden;
     margin-top: 10px;
     /* border: 1px solid red; */
     display: flex;
     gap: 10px;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 div.opcaocat{
     width: 70px;
     height: 70px;
     background-color: white;
-    border-radius: 20px;
-    box-shadow: 1px 1px 7px black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
 }
 div.opcaocat img{
     width: 40px;
@@ -153,31 +153,41 @@ main .tipousuario{
     justify-content: space-between;
     /* height: 30px; */
 }
+main .tipos:active{
+    background-color: var(--roxo);
+    color: white;
+}
 main .tipos{
     background-color: #C5E1F1;
     color: var(--verde);
-    border-radius: 3px;
+    border-radius: 5px;
     /* height: 20px; */
     align-self: center;
     padding: 5px 15px;
+    margin-bottom: 5px;
+}
+span{
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: var(--roxo);
 }
 /* FIM DA NAVEGAÇÃO*/
-
 .navegacao{
     width: 100vw;
     padding: 0px 20px;
     /* border: 1px solid red; */
+    margin-top: 10px;
 }
 .perfilnav{
     width: 100%;
     height: 20rem;
-    background-color: #C5E1F1;
+    background-color: aliceblue;
     display: flex;
     /* justify-content: space-between; */
     flex-direction: column;
     gap: 15px;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 2px 2px 7px black;
     margin-bottom: 30px;
 }
@@ -186,8 +196,11 @@ main .tipos{
     height: 5.4rem;
     /* background-color: #5E17EB; */
     display: flex;
-    gap: 15px;
-    /* justify-content: space-between; */
+    align-items: center;
+    gap: 1px;
+    padding: 0px;
+    margin-top: -9px;
+    justify-content: space-between;
 
 }
 .ftperfil img{
@@ -195,10 +208,16 @@ main .tipos{
     width: 3.6rem;
     height: 3.6rem;
     margin-top: 10px;
-    box-shadow: 1px 1px 7px black;
+    margin-right: 5px;
+    /* border: 1px solid var(--roxo); */
+    /* box-shadow: 1px 1px 7px black; */
 }
 .info{
     width: 300px;
+    overflow: hidden;
+    /* background-color: red; */
+    display: flex;
+    flex-flow: column nowrap;
     h3{
         margin-top: 15px;
         font-size: 1.3em;
@@ -209,18 +228,20 @@ main .tipos{
 }
 .avaliacao{
     /* display: flex; */
+    padding: 0px 10px;
     p{
         display: block;
         margin-top: -20px;
         font-size: 0.7em;
         line-height: 10px;
+        text-align: right;
         span{
             /* font-weight: bold; */
             color: var(--roxo);
         }
     }
     i{
-        color: yellow;
+        color: orange;
     }
 }
 .perfilnav .imgtext{
@@ -246,12 +267,14 @@ main .tipos{
     
 }
 
-.tab-link{
+.tab-link {
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
 }
-
+.tab-link img{
+    width: 30px;
+}
 .toolbar-inner .link{    
     flex:1;
     height: 80px;  
@@ -265,5 +288,6 @@ main .tipos{
 }
 
 .toolbar-inner > .link i{
-    font-size: 28px;
+    font-size: 35px;
+    color: var(--roxo);
 }

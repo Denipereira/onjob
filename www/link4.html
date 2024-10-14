@@ -10,50 +10,90 @@
     <!-- Color theme for statusbar (Android only) -->
     <meta name="theme-color" content="#2196f3">
     <!-- Your app title -->
-    <title>My App</title>
+    <title>OnJOB</title>
     <!-- Path to Framework7 Library Bundle CSS -->
     <link rel="stylesheet" href="lib/framework7-bundle.min.css">
     <!-- CSS PERSONALIZADO PARA MENU-->
     <link rel="stylesheet" href="css/personalizado.css">
+
+    <!-- Icones remixicon -->
+    <link rel="stylesheet" href="css/reimixicon/remixicon.css">
+    <!-- fim dos Icones remixicon -->
+
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <!--Ícones Material Design-->
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- fim das fontes -->
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/login.css">
+    <!-- fim do Estilos -->
 
 
 </head>
 
 <body>
-    <!-- App root element -->
-    <div id="app">
+    <!-- Initial Page, "data-name" contains page name -->
+    <div data-name="index" class="page color-theme-blue">
 
-        <!-- Your main view, should have "view-main" class -->
-        <div class="view view-main">
-            <!-- Initial Page, "data-name" contains page name -->
-            <div data-name="link3" class="page">
+        <!-- Top Navbar -->
+        <header>
+            <i class="ri-star-s-fill"></i>
+            <span class="on">On</span>
+            <span class="job">JOB</span>
+            <i class="ri-star-s-fill"></i>
+        </header>
 
-                <!-- Top Navbar -->
-                <div class="navbar">
-                    <div class="navbar-bg"></div>
-                    <div class="navbar-inner justify-content-center">
-                        <div class="title ">Link 3</div>
+        <!-- Scrollable page content -->
+        <div class="page-content">
+
+        </div>
+
+        <!-- App root element -->
+        <div id="app">
+
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+
+                <!-- TAB BAR-->
+                <div class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner display-flex">
+                        <a href="/index/" class="tab-link link active">
+                            <i class="mdi mdi-home"></i>
+                            <span>Home</span>
+                        </a>
+                        <a href="/link2/" class="tab-link link">
+                            <img src="img/menuMegafone.png" alt="">
+                            <span>Divulgar</span>
+                        </a>
+                        <a href="/link3/" class="tab-link link">
+                            <img src="img/menuChat.png" alt="">
+                            <span>Chat</span>
+                        </a>
+                        <a href="/link4/" class="tab-link link">
+                            <i class="mdi mdi-account"></i>
+                            <span>Perfil</span>
+                        </a>
+
                     </div>
                 </div>
 
-                <!-- Scrollable page content -->
-                <div class="page-content">
-                    <div class="block">
-                        Conteúdo do link 3
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-    <!-- Path to Framework7 Library Bundle JS-->
-    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
-	<!-- jQuery -->
-	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
-    <!-- Roteamento do app-->
-    <script type="text/javascript" src="js/routes.js"></script>
-    <script src="cordova.js"></script>
+        <!-- Path to Framework7 Library Bundle JS-->
+        <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+        <!-- jQuery -->
+        <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+        <!-- Roteamento do app-->
+        <script type="text/javascript" src="js/routes.js"></script>
+        <script src="cordova.js"></script>
 </body>
 
 </html>
