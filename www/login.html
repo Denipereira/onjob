@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Login OnJOB</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <!-- <link rel="stylesheet" href="css/personalizado.css"> -->
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Icones remixicon -->
+    <link rel="stylesheet" href="css/reimixicon/remixicon.css">
+    <!-- fim dos Icones remixicon -->
+
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <!--Ícones Material Design-->
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- fim das fontes -->
+
+    <!-- Estilos -->
+    <!-- <link rel="stylesheet" href="css/login.css"> -->
+    <!-- fim do Estilos -->
+
+
+</head>
+
+<body>
+    <!-- Initial Page, "data-name" contains page name -->
+    <div data-name="login" class="page color-theme-blue">
+
+        <!-- Top header -->
+        <header>
+            <div class="titulo">
+                <i class="ri-star-s-fill"></i>
+                <p class="onjob">
+                    <span class="on">On</span><span class="job">JOB</span>
+                </p>
+                <i class="ri-star-s-fill"></i>
+            </div>
+            <div class="slogan">
+                <p class="bemvindo">Bem-Vindo ao OnJOB!</p>
+                <p>Precisa de um profisional?</p>
+                <p>É um profissional?</p>
+                <p><strong>Aqui não faz diferença</strong></p>
+                <p class="roxo">Chegará no seu objetivo!</p>
+            </div>
+        </header>
+        <!-- End header -->
+
+        <section class="login">
+
+            <!-- TOP SEÇÃO LOGIN -->
+            <aside class="log">Login</aside>
+            <aside class="cad">cadastre-Se</aside>
+            <nav class="campologin">
+                <form action="index.html" method="post">
+                    <label for="email">Email:</label>
+                    <div class="campoemail">
+                        <i class="ri-mail-line"></i>
+                        <input type="email" name="email" id="idemail" placeholder="exemplo@gmail.com">
+                    </div>
+                    <label for="senha">Senha:</label>
+                    <div class="camposenha">
+                        <i class="ri-lock-fill"></i>
+                        <input type="password" name="senha" id="idsenha" placeholder="********">
+                    </div>
+                    <a href="#">Esqueci a Senha</a>
+                    <input type="submit" value="Entrar">
+                </form>
+            </nav>
+            <!-- END SEÇÃO LOGIN -->
+
+            <!-- TOP SEÇÃO CADASTRO -->
+            <nav class="campocadastro">
+                <form action="index.html" method="post">
+                    <div class="nomesobrenome">
+                        <div class="nome">
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="idnome" placeholder="nome:">
+                        </div>
+                        <div class="sobrenome">
+                            <label for="sobrenome">Sobrenome:</label>
+                            <input type="text" name="sobrenome" id="idsobrenome" placeholder="Sobrenome:">
+                        </div>
+                    </div>
+                    <div class="telEnd">
+                        <div class="tel">
+                            <label for="tel">Telefone:</label>
+                            <input type="tel" name="tel" id="idtel" placeholder="(99+) 99 99999-9999">
+                        </div>
+                        <div class="endereco">
+                            <label for="endereco">Endereço:</label>
+                            <div class="maps">
+                                <a href="#">Clique para informar seu endereço</a>
+                                <span class="mdi mdi-google-maps"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="email">Email:</label>
+                    <div class="campoemailcad">
+                        <i class="ri-mail-line"></i>
+                        <input type="email" name="email" id="idemail" placeholder="exemplo@gmail.com">
+                    </div>
+                    <div class="senhacomfirma">
+                        <div class="senha">
+                            <label for="senha">Senha:</label>
+                            <div class="camposenhacad">
+                                <i class="ri-lock-fill"></i>
+                                <input type="password" name="senha" id="senha" placeholder="*****">
+                            </div>
+                        </div>
+                        <div class="comfirmasenha">
+                            <label for="confirmesenha">Confirme Senha:</label>
+                            <input type="password" name="senha" id="senha" placeholder="*****">
+                        </div>
+
+                    </div>
+                    <div class="termos">
+                        <input type="checkbox" name="termos" id="idtermos">
+                        <label for="idtermos">Aceito os <a href="#">Termos de Uso e Privacidade</a></label>
+                    </div>
+                    <div class="loginauto">
+                        <input type="checkbox" name="loginauto" id="idloginauto">
+                        <label for="idloginauto">Login Automaticamente</label>
+                    </div>
+                    <input type="submit" value="Cadastrar">
+                </form>
+            </nav>
+            <!-- END SEÇÃO CADASTRO -->
+        </section>
+        <!-- End nav -->
+
+        <!-- Scrollable page content -->
+
+        <!-- Path to Framework7 Library Bundle JS-->
+        <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+        <!-- jQuery -->
+        <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+        <!-- Roteamento do app-->
+        <script type="text/javascript" src="js/routes.js"></script>
+        <script src="cordova.js"></script>
+</body>
+
+</html>

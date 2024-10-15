@@ -1,10 +1,360 @@
-:root{
+:root {
     --roxo: #5E17EB;
     --verde: #00BF63;
 }
-*{
+
+* {
     padding: 0;
-    margin: 0;
+    margin: 0px;
     box-sizing: border-box;
     font-family: poppins;
 }
+
+header {
+    width: 80vw;
+    margin: auto;
+    /* background-color: red; */
+    text-align: center;
+}
+
+header .titulo {
+    display: flex;
+    font-size: 2.3em;
+    margin-top: -30px;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    i {
+        margin-top: -40px;
+    }
+}
+
+.titulo .on {
+    color: #00BF63;
+}
+
+.titulo .job {
+    color: var(--roxo);
+}
+
+.titulo i {
+    color: var(--roxo);
+    font-size: 40px;
+}
+
+.titulo i:nth-child(3) {
+    color: var(--verde);
+    font-size: 40px;
+}
+
+.slogan {
+    margin-top: -80px;
+    line-height: 12px;
+
+    .bemvindo {
+        font-size: 2em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .roxo {
+        color: var(--roxo);
+        font-size: 1.4em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}
+
+/* End header */
+
+/* top section login */
+.login {
+    display: flex;
+    /* background-color: #00BF63; */
+    flex-flow: row wrap;
+}
+
+.login aside {
+    flex-basis: 50vw;
+    /* background-color: red; */
+}
+
+.log {
+    background-color: var(--verde);
+    text-align: center;
+    padding: 20px;
+    border-start-start-radius: 25px;
+    border-start-end-radius: 25px;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+}
+
+.cad {
+    background-color: var(--roxo);
+    text-align: center;
+    padding: 20px;
+    border-start-start-radius: 25px;
+    border-start-end-radius: 25px;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+}
+
+nav {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--verde);
+    padding: 0px 20px;
+}
+
+nav form {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin: auto;
+    margin-top: 30px;
+
+    /* background-color: red; */
+    label {
+        color: white;
+        font-weight: bold;
+    }
+
+}
+
+form .campoemail {
+    /* width: 70vw; */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 4rem;
+    box-shadow: 7px 7px 1px var(--roxo);
+    i{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+}
+
+form .camposenha {
+    /* width: 70vw; */
+    background-color: white;
+    display: flex;
+    align-items: baseline;
+    border-radius: 15px;
+    box-shadow: 7px 7px 1px orange;
+    i{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+}
+
+form input[type=email] {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+i {
+    margin-left: 30px;
+}
+
+form input[type=password] {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form a {
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+form input[type=submit] {
+    padding: 10px;
+    border-radius: 40px;
+    background-color: var(--roxo);
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.campologin {
+    display: none;
+}
+
+/* End section login */
+
+/* top section cadastro */
+.campocadastro {
+    background-color: var(--roxo);
+}
+
+nav .nomesobrenome {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    /* background-color: red; */
+
+    .nome input {
+        background-color: white;
+        border-radius: 5px;
+        padding: 5px;
+        width: 100%;
+        height: 2.5rem;
+    }
+
+    .sobrenome input {
+        background-color: white;
+        border-radius: 5px;
+        padding: 5px;
+        width: 100%;
+        height: 2.5rem;
+    }
+}
+
+nav .telEnd {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    /* background-color: red; */
+
+    .tel input {
+        background-color: white;
+        border-radius: 5px;
+        padding: 5px;
+        /* width: 100%; */
+        height: 2.5rem;
+
+        &::placeholder {
+            font-size: 0.8em;
+        }
+    }
+
+    .endereco {
+        display: flex;
+        flex-direction: column;
+        .maps{
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            background-color: var(--verde);
+            span{
+                cursor: pointer;
+                color: rgb(196, 13, 13);
+                font-size: 25px;
+            }
+            &:hover{
+                background-color: #046e3b;
+                span{
+                    color: red;
+                }
+            }
+        }
+        a {
+            margin-top: -0px;
+            background-color: var(--verde);
+            text-align: center;
+            text-decoration: none;
+            color: var(--roxo);
+            border-radius: 5px;
+            font-size: 0.8em;
+            font-weight: bold;
+            width: 100%;
+            height: 2.5rem;
+            margin-top: 5px;
+          
+        }
+    }
+}
+
+nav .campoemailcad {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    input {
+        width: 100%;
+        background-color: #FEFBFF;
+    }
+
+    i {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+}
+
+nav .senhacomfirma {
+    display: flex;
+    gap: 10px;
+}
+
+nav .camposenhacad {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    i {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    input {
+        /* background-color: red; */
+        width: 100%;
+        height: 2rem;
+    }
+}
+
+nav .comfirmasenha {
+    input {
+        width: 100%;
+        height: 2rem;
+        border-radius: 5px;
+    }
+}
+.termos{
+    a{
+        color: #cab9ee;
+        &:hover{
+            font-size: 1.03em;
+            transition: font-size 0.3s ease;
+        }
+    }
+}
+nav input[type=checkbox] {
+    margin-left: 0px;
+    width: 30px;
+    cursor: pointer;
+}
+
+nav input[type=submit] {
+    background-color: var(--verde);
+    color: black;
+    &:hover{
+        /* border: 1px solid orange; */
+        color: var(--verde);
+        border: none;
+        background-color: var(--roxo);
+        box-shadow: 2px 2px 7px black;
+        transition: box-shadow 0.2s ease;
+    }
+}
+
+/* End section cadastro */
